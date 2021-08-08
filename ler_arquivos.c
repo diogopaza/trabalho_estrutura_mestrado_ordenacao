@@ -6,6 +6,7 @@
 
 int main () {
 
+    int cont =0;
     FILE *arquivo;   
     char url[]="a100.txt",
       info[100];
@@ -16,15 +17,19 @@ int main () {
         getchar();
         exit(1);
     }else{
-        while( (fgets(info, sizeof(info), arquivo))!=NULL )
+        while( (fgets(info, sizeof(info), arquivo))!=NULL ){
+            cont = cont + 1;
             printf("%s", info);
             if(info>500){
                 /*int soma =10;                
                 soma = atoi(info) + soma;
                 printf("Valor maior = %i", soma);*/
             }
+
+        }
+            
     }
-    
+    printf("Valor de cont %i", cont);
     fclose(arquivo);   
  
  return 0;

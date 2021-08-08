@@ -10,7 +10,7 @@ int main(void)
     DIR *dir;
     struct dirent *lsdir;
 
-    dir = opendir("c:\\Users\\HP\\Documents\\mestrado_estrutura_de_dados\\atividade_final_estrutura\\aleatorios\\");
+    dir = opendir("c:\\Users\\HP\\Documents\\mestrado_estrutura_de_dados\\trabalho_estrutura_mestrado_ordenacao\\aleatorios\\");
 
     /* print all the files and directories within directory */
     while ( ( lsdir = readdir(dir) ) != NULL )
