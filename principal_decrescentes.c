@@ -13,7 +13,7 @@ int i,TAM=0;
 FILE *arquivo; 
 char vetorNomeArquivo[23][200];
 char nomeArquivo[];
-char pasta[] = "c:\\Users\\HP\\Documents\\mestrado_estrutura_de_dados\\trabalho_estrutura_mestrado_ordenacao\\aleatorios\\";
+char pasta[] = "c:\\Users\\HP\\Documents\\mestrado_estrutura_de_dados\\trabalho_estrutura_mestrado_ordenacao\\decrescentes\\";
 char caminhoFinal[200];
 char nome_busca[20];
 int *totalElementos;
@@ -164,7 +164,7 @@ void lerDiretorio(){
     int cont = 0;
     struct dirent *lsdir;
 
-    dir = opendir("c:\\Users\\HP\\Documents\\mestrado_estrutura_de_dados\\trabalho_estrutura_mestrado_ordenacao\\aleatorios\\");
+    dir = opendir("c:\\Users\\HP\\Documents\\mestrado_estrutura_de_dados\\trabalho_estrutura_mestrado_ordenacao\\decrescentes\\");
 
     /* print all the files and directories within directory */
     while ( ( lsdir = readdir(dir) ) != NULL )

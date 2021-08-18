@@ -1,0 +1,18 @@
+---
+title: "ordenacao"
+output: html_document
+---
+
+```{r}
+df <- read.table("c:\\Users\\HP\\Documents\\mestrado_estrutura_de_dados\\trabalho_estrutura_mestrado_ordenacao\\tabela.csv",dec=".",sep=";",h=T)
+
+df
+names(df)
+summary(df$Tempo[df$Algoritmo=="mergesort"])
+summary(df$Tempo[df$Algoritmo=="quick_sort"])
+
+boxplot(df$Tempo~df$Algoritmo,col=3, horizontal = TRUE, main="BoxPlot",xlab = "Tempo",ylab = "Algoritmo")
+
+
+```
+
